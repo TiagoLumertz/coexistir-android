@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#5CB1F3"
+    tools:context="com.example.usurio.myapplication.MainActivity">
+
+    <ImageButton
+        android:id="@+id/ib_avaliacao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/like"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="0dp"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <TextView
+        android:id="@+id/tv_avaliacao"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Avalie o Coexistir!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <ImageButton
+        android:id="@+id/ib_eventos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/calendar"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <ImageButton
+        android:id="@+id/ib_tutorial"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/warning"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <TextView
+        android:id="@+id/tv_tutorial"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Você sofreu intolerância?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <ImageButton
+        android:id="@+id/ib_amigos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/users"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/tv_ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, Usuário!"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageButton
+        android:id="@+id/ib_notificacao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/alarm"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <ImageButton
+        android:id="@+id/ib_leitura"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/reading"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <ImageButton
+        android:id="@+id/ib_centros"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/home"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <ImageButton
+        android:id="@+id/ib_opcoes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/settings"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        app:srcCompat="@color/colorPrimary"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <TextView
+        android:id="@+id/tv_nivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nível 0"
+        android:textAlignment="viewStart"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/tv_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 500"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/tv_leitura"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Ler conteúdos"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <TextView
+        android:id="@+id/tv_amigos"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Lista de amigos"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+
+    <TextView
+        android:id="@+id/tv_centro"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Centros religiosos"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <TextView
+        android:id="@+id/tv_eventos"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Eventos religiosos"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+</android.support.constraint.ConstraintLayout>

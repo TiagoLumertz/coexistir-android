@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\android-sdk\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\home\\alunoinfo\\.android\\build-cache\\bd2f43738b92369eb8b753d6efdc83911ad1c8d0\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\home\\alunoinfo\\.android\\build-cache\\bd2f43738b92369eb8b753d6efdc83911ad1c8d0\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\home\\alunoinfo\\.android\\build-cache\\bd2f43738b92369eb8b753d6efdc83911ad1c8d0\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\android-sdk\\Coexistop\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\home\\alunoinfo\\.android\\build-cache\\bd2f43738b92369eb8b753d6efdc83911ad1c8d0\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\android-sdk\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\android-sdk\\Coexistop\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\android-sdk\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\home\\alunoinfo\\.android\\build-cache\\bd2f43738b92369eb8b753d6efdc83911ad1c8d0\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\android-sdk\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\home\\alunoinfo\\.android\\build-cache\\bd2f43738b92369eb8b753d6efdc83911ad1c8d0\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\android-sdk\\Coexistop\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\android-sdk\\Coexistop\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\android-sdk\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\android-sdk\\Coexistop\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\android-sdk\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\home\\alunoinfo\\Área de Trabalho\\MyApplication\\C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\android-sdk\\Coexistop\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Usuário\\.android\\build-cache\\051cd798cc7202f6baf3b16ca1ce949633ba0c7d\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    }
+]
