@@ -12,7 +12,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/like"
-        android:backgroundTint="@color/colorPrimary"
         android:elevation="0dp"
         tools:layout_editor_absoluteX="268dp"
         tools:layout_editor_absoluteY="331dp" />
@@ -23,7 +22,7 @@
         android:layout_height="35dp"
         android:text="Avalie o Coexistir!"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#ffffff"
         tools:layout_editor_absoluteX="268dp"
         tools:layout_editor_absoluteY="431dp" />
 

@@ -72,6 +72,7 @@
         android:layout_height="214dp"
         android:ems="10"
         android:hint="Faça nesta caixa sua sugestão :)"
+        android:gravity="center_horizontal"
         android:inputType="textMultiLine"
         android:selectAllOnFocus="false"
         android:textColor="#ffffff"
