@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#5CB1F3"
+    tools:context="com.example.usurio.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ava_sug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliações e Sugestões"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+	 <Button
+        android:id="@+id/bt_ver_ava"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="Ver Avaliações"
+        android:textColor="#5CB1F3"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="286dp" />
+		
+    <Button
+        android:id="@+id/bt_ver_sug"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="Ver Sugestões"
+        android:textColor="#5CB1F3"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="333dp" />
+		
+    <ImageView
+        android:id="@+id/iv_box"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/archive"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+</android.support.constraint.ConstraintLayout>

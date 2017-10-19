@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#5CB1F3"
+    tools:context="com.example.usurio.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_pergunta1"
+        android:layout_width="341dp"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:text="Fui ofendido pela minha crença. E agora?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_resposta1"
+        android:layout_width="341dp"
+        android:layout_height="164dp"
+        android:gravity="center"
+        android:text="O Artigo V da Constituição de 1988 traz o direito de liberdade de escolha e prática de confissão religiosa. A ocorrência deste enquadra-se na violação do artigo 208 do Código Penal, sob pena de multa ou de 1 mês a 1 ano de detenção."
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:id="@+id/tv_pergunta2"
+        android:layout_width="341dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Como faço para denunciar?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <TextView
+        android:id="@+id/tv_resposta2a"
+        android:layout_width="341dp"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:text="Além do registro de boletim de ocorrência na delegacia mais próxima, existem dois meios virtuais de fazer a denúncia:"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/tv_resposta2b"
+        android:layout_width="341dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="SaferNet (crimes virtuais)"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <TextView
+        android:id="@+id/tv_resposta2c"
+        android:layout_width="341dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="http://new.safernet.org.br/denuncie"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/tv_resposta2d"
+        android:layout_width="341dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="Disque Direitos Humanos"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:id="@+id/tv_resposta2e"
+        android:layout_width="341dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="Ligue para o número 100"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+</android.support.constraint.ConstraintLayout>
