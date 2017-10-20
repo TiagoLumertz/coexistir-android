@@ -52,7 +52,7 @@
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
-        android:id="@+id/iv_eventos"
+        android:id="@+id/iv_avaliacao"
         android:layout_width="83dp"
         android:layout_height="83dp"
         app:srcCompat="@drawable/coexistirlogo"

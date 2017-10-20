@@ -30,7 +30,7 @@
         tools:layout_editor_absoluteY="357dp" />
 
     <ImageView
-        android:id="@+id/iv_coexistir"
+        android:id="@+id/iv_login"
         android:layout_width="188dp"
         android:layout_height="207dp"
         app:srcCompat="@drawable/coexistirlogo"

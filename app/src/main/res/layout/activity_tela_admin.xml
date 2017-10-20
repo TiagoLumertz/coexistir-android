@@ -31,41 +31,21 @@
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="205dp" />
 
-    <TextView
-        android:id="@+id/tv_avaliacoes"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:text="Consultar avaliações"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="305dp" />
-
-    <TextView
-        android:id="@+id/tv_ola"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Olá, Administrador!"
-        android:textColor="#ffffff"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="32dp" />
+    <ImageButton
+        android:id="@+id/ib_opcoes_admin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/settings"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="21dp" />
 
     <ImageButton
         android:id="@+id/ib_notificacao"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        tools:layout_editor_absoluteY="21dp"
+        android:background="@drawable/alarm"
         tools:layout_editor_absoluteX="257dp"
-        android:background="@drawable/alarm" />
-
-    <ImageButton
-        android:id="@+id/ib_opcoes"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        tools:layout_editor_absoluteY="21dp"
-        tools:layout_editor_absoluteX="318dp"
-        android:background="@drawable/settings" />
+        tools:layout_editor_absoluteY="21dp" />
 
     <TextView
         android:id="@+id/tv_ed_conteudos"
@@ -75,6 +55,16 @@
         android:textAlignment="center"
         android:textColor="#ffffff"
         tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:id="@+id/tv_avaliacoes"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Consultar avaliações"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="305dp" />
 
 
@@ -87,5 +77,15 @@
         android:textColor="#ffffff"
         tools:layout_editor_absoluteX="257dp"
         tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:id="@+id/tv_ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, Administrador!"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="32dp" />
 
 </android.support.constraint.ConstraintLayout>

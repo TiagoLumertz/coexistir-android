@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="197dp" />
 
     <Button
-        android:id="@+id/tv_ranking"
+        android:id="@+id/bt_ranking"
         android:layout_width="342dp"
         android:layout_height="47dp"
         android:text="Ranking de Usuários"
@@ -36,7 +36,7 @@
         tools:layout_editor_absoluteY="333dp" />
 
     <Button
-        android:id="@+id/tv_ver_admins"
+        android:id="@+id/bt_ver_admins"
         android:layout_width="342dp"
         android:layout_height="47dp"
         android:text="Ver Lista de Administradores"

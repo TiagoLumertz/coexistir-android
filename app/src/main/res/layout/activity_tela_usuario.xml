@@ -7,6 +7,14 @@
     tools:background="#5CB1F3"
     tools:context="com.example.usurio.myapplication.MainActivity">
 
+    <ImageView
+        android:id="@+id/iv_nivel"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        app:srcCompat="@color/colorPrimary"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="95dp" />
+
     <ImageButton
         android:id="@+id/ib_avaliacao"
         android:layout_width="100dp"
@@ -15,16 +23,6 @@
         android:elevation="0dp"
         tools:layout_editor_absoluteX="268dp"
         tools:layout_editor_absoluteY="331dp" />
-
-    <TextView
-        android:id="@+id/tv_avaliacao"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:text="Avalie o Coexistir!"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="431dp" />
 
     <ImageButton
         android:id="@+id/ib_eventos"
@@ -35,22 +33,12 @@
         tools:layout_editor_absoluteY="331dp" />
 
     <ImageButton
-        android:id="@+id/ib_tutorial"
+        android:id="@+id/ib_guia"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/warning"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="331dp" />
-
-    <TextView
-        android:id="@+id/tv_tutorial"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:text="Você sofreu intolerância?"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="431dp" />
 
     <ImageButton
         android:id="@+id/ib_amigos"
@@ -59,24 +47,6 @@
         android:background="@drawable/users"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="168dp" />
-
-    <TextView
-        android:id="@+id/tv_ola"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Olá, Usuário!"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="28dp" />
-
-    <ImageButton
-        android:id="@+id/ib_notificacao"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/alarm"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="21dp" />
 
     <ImageButton
         android:id="@+id/ib_leitura"
@@ -95,20 +65,30 @@
         tools:layout_editor_absoluteY="168dp" />
 
     <ImageButton
-        android:id="@+id/ib_opcoes"
+        android:id="@+id/ib_opcoes_usuario"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/settings"
         tools:layout_editor_absoluteX="318dp"
         tools:layout_editor_absoluteY="21dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="344dp"
-        android:layout_height="45dp"
-        app:srcCompat="@color/colorPrimary"
+    <ImageButton
+        android:id="@+id/ib_notificacao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/alarm"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <TextView
+        android:id="@+id/tv_ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, Usuário!"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
         tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteY="28dp" />
 
     <TextView
         android:id="@+id/tv_nivel"
@@ -133,6 +113,26 @@
         tools:layout_editor_absoluteY="106dp" />
 
     <TextView
+        android:id="@+id/tv_guia"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Você sofreu intolerância?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <TextView
+        android:id="@+id/tv_avaliacao"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Avalie o Coexistir!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <TextView
         android:id="@+id/tv_leitura"
         android:layout_width="100dp"
         android:layout_height="35dp"
@@ -154,7 +154,7 @@
 
 
     <TextView
-        android:id="@+id/tv_centro"
+        android:id="@+id/tv_centros"
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:text="Centros religiosos"

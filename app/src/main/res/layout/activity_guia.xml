@@ -43,7 +43,7 @@
         android:textSize="24dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="261dp" />
+        tools:layout_editor_absoluteY="248dp" />
 
     <TextView
         android:id="@+id/tv_resposta2a"
@@ -55,7 +55,7 @@
         android:textColor="#ffffff"
         android:textSize="18dp"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="297dp" />
+        tools:layout_editor_absoluteY="284dp" />
 
     <TextView
         android:id="@+id/tv_resposta2b"

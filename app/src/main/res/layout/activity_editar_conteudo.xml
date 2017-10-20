@@ -8,7 +8,7 @@
     tools:context="com.example.usurio.myapplication.MainActivity">
 
     <TextView
-        android:id="@+id/tv_opcoes"
+        android:id="@+id/tv_edit_cont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editar Conteúdos"
