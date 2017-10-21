@@ -49,14 +49,6 @@
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="80dp" />
 
-    <Spinner
-        android:id="@+id/sp_genero"
-        android:layout_width="333dp"
-        android:layout_height="40dp"
-        android:text="Gênero"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="281dp" />
-
     <EditText
         android:id="@+id/et_data_nasc"
         android:layout_width="333dp"
@@ -80,14 +72,6 @@
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="200dp" />
 
-    <Spinner
-        android:id="@+id/sp_uf"
-        android:layout_width="113dp"
-        android:layout_height="40dp"
-        android:text="UF"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="200dp" />
-
     <EditText
         android:id="@+id/et_rg"
         android:layout_width="333dp"
@@ -99,14 +83,6 @@
         android:inputType="number"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="240dp" />
-
-    <Spinner
-        android:id="@+id/sp_pos_relig"
-        android:layout_width="333dp"
-        android:layout_height="40dp"
-        android:text="Posição Religiosa"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="120dp" />
 
     <EditText
         android:id="@+id/et_email"
@@ -130,6 +106,30 @@
         android:textColorHint="#ffffff"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="361dp" />
+
+    <Spinner
+        android:id="@+id/sp_uf"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:text="UF"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Spinner
+        android:id="@+id/sp_genero"
+        android:layout_width="333dp"
+        android:layout_height="40dp"
+        android:text="Gênero"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <Spinner
+        android:id="@+id/sp_pos_religiosa"
+        android:layout_width="333dp"
+        android:layout_height="40dp"
+        android:text="Posição Religiosa"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="120dp" />
 
     <Spinner
         android:id="@+id/sp_red_soc"
