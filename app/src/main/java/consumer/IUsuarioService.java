@@ -18,8 +18,8 @@ import retrofit2.http.Path;
 public interface IUsuarioService {
     static final String URL_BASE = "http://127.0.0.1:3306/coex/";
 
-    @POST("/usuario/{login}/{senha}")
-    Call<Usuario> postAutentica(@Path("login") String login, @Path("senha") String senha);
+    @POST("/usuario/{apelido}/{senha}")
+    Call<Usuario> postAutentica(@Path("apelido") String apelido, @Path("senha") String senha);
 
     @POST("/usuario/")
     Call<Usuario> postCadastrar(@Body Usuario usuario);

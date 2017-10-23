@@ -15,10 +15,18 @@
         android:text="Fui ofendido pela minha crença. E agora?"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_resposta1"
@@ -28,9 +36,17 @@
         android:text="O Artigo V da Constituição de 1988 traz o direito de liberdade de escolha e prática de confissão religiosa. A ocorrência deste enquadra-se na violação do artigo 208 do Código Penal, sob pena de multa ou de 1 mês a 1 ano de detenção."
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_pergunta2"
@@ -40,10 +56,18 @@
         android:text="Como faço para denunciar?"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="248dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_resposta2a"
@@ -54,8 +78,16 @@
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="18dp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="284dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_resposta2b"
@@ -68,8 +100,16 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="373dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_resposta2c"
@@ -81,8 +121,16 @@
         android:textAllCaps="false"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_resposta2d"
@@ -95,8 +143,16 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="423dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886"
+        app:layout_constraintHorizontal_bias="0.511" />
 
     <TextView
         android:id="@+id/tv_resposta2e"
@@ -108,7 +164,15 @@
         android:textAllCaps="false"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="448dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.511" />
 
 </android.support.constraint.ConstraintLayout>

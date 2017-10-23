@@ -8,39 +8,86 @@
     tools:context="com.example.usurio.myapplication.MainActivity">
 
     <TextView
-        android:id="@+id/tv_ava_sug"
+        android:id="@+id/tv_corpo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Avaliações e Sugestões"
+        android:text="Corpo Administrativo"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="198dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintHorizontal_bias="0.503" />
 
-	 <Button
-        android:id="@+id/bt_ver_ava"
-        android:layout_width="342dp"
-        android:layout_height="47dp"
-        android:text="Ver Avaliações"
-        android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="286dp" />
-		
     <Button
-        android:id="@+id/bt_ver_sug"
+        android:id="@+id/bt_ranking"
         android:layout_width="342dp"
         android:layout_height="47dp"
-        android:text="Ver Sugestões"
+        android:text="Ranking de Usuários"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="333dp" />
-		
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581"/>
+
+    <Button
+        android:id="@+id/bt_elevar"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="Elevar Usuário à Administrador"
+        android:textColor="#5CB1F3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"/>
+
+    <Button
+        android:id="@+id/bt_ver_admins"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="Ver Lista de Administradores"
+        android:textColor="#5CB1F3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"/>
+
     <ImageView
-        android:id="@+id/iv_box"
+        android:id="@+id/iv_corpo"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/archive"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="63dp" />
+        app:srcCompat="@drawable/id"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        android:layout_marginBottom="17dp" />
 
 </android.support.constraint.ConstraintLayout>

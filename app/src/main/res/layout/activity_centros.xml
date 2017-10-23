@@ -15,17 +15,28 @@
         android:textColor="#ffffff"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="197dp" />
+        tools:layout_editor_absoluteY="197dp"		
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintVertical_bias="0.452"
+        tools:ignore="HardcodedText"/>
 
     <Button
         android:id="@+id/bt_add_centros"
-        android:layout_width="342dp"
-        android:layout_height="47dp"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
         android:elevation="0dp"
         android:text="Adicionar Centro"
         android:textColor="#5CB1F3"
         tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="286dp" />
+        tools:layout_editor_absoluteY="335dp" />
 
 	 <Button
         android:id="@+id/bt_alt_centros"
@@ -33,8 +44,16 @@
         android:layout_height="47dp"
         android:text="Alterar Centro"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="333dp" />
+         tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.62"
+        tools:ignore="HardcodedText" />
 		
     <Button
         android:id="@+id/bt_rem_centros"
@@ -42,8 +61,16 @@
         android:layout_height="47dp"
         android:text="Remover Centro"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="380dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823"
+        tools:ignore="HardcodedText"/>
 
     <Button
         android:id="@+id/bt_mapa_centros"
@@ -51,15 +78,31 @@
         android:layout_height="47dp"
         android:text="Ver Mapa de Centros"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="427dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924"
+        tools:ignore="HardcodedText"/>
 
     <ImageView
         android:id="@+id/iv_centros"
         android:layout_width="120dp"
         android:layout_height="120dp"
         app:srcCompat="@drawable/map"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="63dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184"
+        tools:ignore="HardcodedText"/>
 
 </android.support.constraint.ConstraintLayout>

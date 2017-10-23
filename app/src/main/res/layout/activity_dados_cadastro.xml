@@ -14,9 +14,17 @@
         android:text="Faça seu cadastro"
         android:textColor="#ffffff"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="16dp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/bt_conf_cad"
@@ -24,8 +32,17 @@
         android:layout_height="48dp"
         android:text="Confirmar Cadastro"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteY="451dp"
-        tools:layout_editor_absoluteX="97dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.946"
+        tools:ignore="HardcodedText"/>
 
     <EditText
         android:id="@+id/et_nome"
@@ -35,8 +52,17 @@
         android:hint="Nome"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.121"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/et_apelido"
@@ -46,8 +72,17 @@
         android:hint="Apelido"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.205"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/et_data_nasc"
@@ -58,8 +93,17 @@
         android:inputType="date"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/et_cidade"
@@ -69,8 +113,17 @@
         android:hint="Cidade"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintVertical_bias="0.545"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/et_rg"
@@ -81,8 +134,17 @@
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         android:inputType="number"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="240dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.63"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/et_email"
@@ -90,11 +152,20 @@
         android:layout_height="40dp"
         android:ems="10"
         android:hint="E-mail"
+        android:inputType="textEmailAddress"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="321dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715"
+        tools:ignore="HardcodedText"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <EditText
         android:id="@+id/et_senha"
@@ -104,39 +175,67 @@
         android:hint="Senha"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.806"
+        tools:ignore="HardcodedText" />
 
     <Spinner
         android:id="@+id/sp_uf"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:text="UF"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545"
+        tools:ignore="HardcodedText"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Spinner
         android:id="@+id/sp_genero"
         android:layout_width="333dp"
         android:layout_height="40dp"
         android:text="Gênero"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="281dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.29"
+        tools:ignore="HardcodedText" />
 
     <Spinner
         android:id="@+id/sp_pos_religiosa"
         android:layout_width="333dp"
         android:layout_height="40dp"
         android:text="Posição Religiosa"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <Spinner
-        android:id="@+id/sp_red_soc"
-        android:layout_width="333dp"
-        android:layout_height="40dp"
-        android:text="Redes Sociais"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintVertical_bias="0.375"
+        tools:ignore="HardcodedText" />
 
 </android.support.constraint.ConstraintLayout>

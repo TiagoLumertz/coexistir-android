@@ -12,8 +12,16 @@
         android:layout_width="188dp"
         android:layout_height="207dp"
         app:srcCompat="@drawable/coexistirlogo"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="56dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        tools:ignore="HardcodedText"/>
 
     <TextView
         android:id="@+id/tv_pergunta_cad"
@@ -21,8 +29,16 @@
         android:layout_height="wrap_content"
         android:text="Você deseja cadastrar uma conta de:"
         android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="283dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/bt_cad_usuario"
@@ -30,8 +46,17 @@
         android:layout_height="47dp"
         android:text="Usuário"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="324dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.717"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/bt_cad_admin"
@@ -39,7 +64,16 @@
         android:layout_height="48dp"
         android:text="Administrador"
         android:textColor="#5CB1F3"
-        tools:layout_editor_absoluteY="371dp"
-        tools:layout_editor_absoluteX="97dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.831"
+        tools:ignore="HardcodedText" />
 
 </android.support.constraint.ConstraintLayout>
