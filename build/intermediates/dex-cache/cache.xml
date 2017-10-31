@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_ad7dfb062f5fc323a2a58209b373defc5669124f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/4cc3c9ba0a10ea08cdb322b7debee6490cf72066/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b870e5c89efa04ebad40730fcf5af528fe15d1cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/4c2e69987b6455bc770221b3b46da6b972479854/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_592c2215269bcf120b71c548e9165e5ba0469231/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/3f7f0bf68e73feefbdf8a87420a9ca5e39674dfe/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b424da8003a4e450e3a75c5777bd60cc7af8d93c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/913fb9e185322a7814487b1398da0c705c13cba1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_38579289692f430841e6dac6412f6f8bc54b2927/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.3.0_cf55af7c71d8481f3a0186501a0dc8b553c4b67e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/55d24f62b417a9d6294c73f57916c662195c26dd/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ab55df630f4b6e6a29ba4ccea9ecb6049c1a9c5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/4e94c2497ebcea2e000b6a445d30492d0f1df088/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5e6dead6e6e5a6d33a4b91b6a5002e1cfa90fd51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/7ff82b16e4f1ae6234b11bf28eea78c73bb348cf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d99f61687870137b401c54f47412cc0dcba0df92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/4e94c2497ebcea2e000b6a445d30492d0f1df088/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_2e35eecc125f62e7ec21e73d497a26c9e9c5c4ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/3f7f0bf68e73feefbdf8a87420a9ca5e39674dfe/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_3dbb6cd0e6544da28828a22d0f80f161045e2d95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_b0ee2b718f42078ea5ce613e49289e2b3fa2f2e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.8.0_95bea996d25cefcbb2296c74ded3cac6df962ee0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_61d1f5330d4adfc280e964c6c01e7cbc97a24d7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="086ec8c374ae0e270a34e7d48579173935372047">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2cf7985223defaade0dcb036100f84873a4a7d79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/55d24f62b417a9d6294c73f57916c662195c26dd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ecd10330074b91a4563f4112664d1ac1888b32b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.3.0_1798fc6066d9178b88903b814bcb669506401e01/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b0f4df7d6850ccc1a7ce047cacf0a988b871ef23/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_d442c55ba87573c20a8db089203073f044616ef2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/7ff82b16e4f1ae6234b11bf28eea78c73bb348cf/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_5f2ef183062a82cc7dd0327e466dc6acf6acfd65/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/2e00a74b048629597c41f5f8522b59093ff8ce09/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_26da80c11bba6c44ab2bc1b8bdaca8718cdaf1b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/4cc3c9ba0a10ea08cdb322b7debee6490cf72066/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_8321babbfb77a3f59823b99aaddfd61de233e4dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/257c600892569746d4b50a9158bc5d5c0ac68912/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_98d479e6a8668c85cea7c679fce8056491ec4085/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alunoinfo/.android/build-cache/98daca52d3a2e421cc3d5910e8029777ab025bb8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/alunoinfo/Área de Trabalho/coexistir-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b9989e175f7056b04cad148e2d8ebfd4f311e28f/classes.dex" />
+    </item>
+
+</items>
