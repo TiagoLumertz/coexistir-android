@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#5CB1F3"
+    tools:context="com.example.usurio.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_religiao"
+        android:layout_width="73dp"
+        android:layout_height="85dp"
+        app:srcCompat="@drawable/catolicismo"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_leitura"
+        android:layout_width="245dp"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:text="Catolicismo Romano"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/tv_conteudo"
+        android:layout_width="343dp"
+        android:layout_height="337dp"
+        android:gravity="center"
+        android:text="O catolicismo é uma das mais expressivas vertentes do cristianismo e, ainda hoje, congrega a maior comunidade de cristãos existente no planeta. Segundo algumas estatísticas recentes, cerca de um bilhão de pessoas professam ser adeptas ao catolicismo, que tem o Brasil e o México como os principais redutos de convertidos. De fato, as origens do catolicismo estão ligadas aos primeiros passos dados na história do cristianismo. Em sua organização, o catolicismo é marcado por uma rígida estrutura hierárquica que se sustenta nas seguintes instituições: as paróquias, as dioceses e as arquidioceses. Todas essas três instituições são submetidas à direção e ensinamentos provenientes do Vaticano, órgão central da Igreja Católica comandado por um pontífice máximo chamado de Papa. Abaixo de sua autoridade estão subordinados os cardeais, arcebispos, bispos, padres e todo o restante da comunidade cristã espalhada pelo mundo."
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/bt_perguntas"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="Responder Perguntas"
+        android:textColor="#5CB1F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965"
+        tools:ignore="HardcodedText"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
