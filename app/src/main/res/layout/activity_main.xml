@@ -8,7 +8,7 @@
     tools:context="com.example.usurio.myapplication.MainActivity">
 
     <ImageView
-        android:id="@+id/iv_coexistir"
+        android:id="@+id/iv_pergunta_estatisticas"
         android:layout_width="188dp"
         android:layout_height="207dp"
         app:srcCompat="@drawable/coexistirlogo"
@@ -53,7 +53,7 @@
         android:text="Fazer Cadastro"
         android:textColor="#5CB1F3"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/iv_coexistir"
+        android:layout_alignStart="@+id/iv_pergunta_estatisticas"
         android:layout_marginBottom="72dp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void iniComps() {
-        this.Coexistir = (ImageView)findViewById(R.id.iv_coexistir);
+        this.Coexistir = (ImageView)findViewById(R.id.iv_pergunta_estatisticas);
         this.btLogin = (Button)findViewById(R.id.bt_fazer_login);
         this.btCadastro = (Button)findViewById(R.id.bt_fazer_cadastro);
     }
