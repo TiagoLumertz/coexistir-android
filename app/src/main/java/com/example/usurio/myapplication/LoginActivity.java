@@ -20,7 +20,7 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         this.iniComps();
 
         this.btLogar.setOnClickListener(new View.OnClickListener() {
@@ -35,10 +35,10 @@ public class LoginActivity extends Activity {
 
     private void iniComps() {
         this.ivLogin = (ImageView)findViewById(R.id.iv_login);
-        this.etApelido = (EditText)findViewById(R.id.et_apelido_login);
-        this.etSenha = (EditText)findViewById(R.id.et_senha_login);
+        this.etApelido = (EditText)findViewById(R.id.et_apelido);
+        this.etSenha = (EditText)findViewById(R.id.et_senha);
         this.tvLogin = (TextView)findViewById(R.id.tv_login);
-        this.btLogar = (Button)findViewById(R.id.bt_logar);
+        this.btLogar = (Button)findViewById(R.id.bt_logar2);
     }
 
 }

@@ -16,7 +16,7 @@ public class TelaUsuarioActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tela_usuario);
         this.iniComps();
 
     }

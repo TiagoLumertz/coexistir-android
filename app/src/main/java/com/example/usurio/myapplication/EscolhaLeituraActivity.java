@@ -14,31 +14,13 @@ public class EscolhaLeituraActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_escolha_leitura);
         this.iniComps();
 
     }
 
     private void iniComps(){
         this.tvLeitura = (TextView)findViewById(R.id.tv_leitura);
-        this.tvEx1 = (TextView)findViewById(R.id.tv_exemplo1);
-        this.tvEx2 = (TextView)findViewById(R.id.tv_exemplo2);
-        this.tvEx3 = (TextView)findViewById(R.id.tv_exemplo3);
-        this.tvEx4 = (TextView)findViewById(R.id.tv_exemplo4);
-        this.tvEx5 = (TextView)findViewById(R.id.tv_exemplo5);
-        this.tvEx6 = (TextView)findViewById(R.id.tv_exemplo6);
-        this.tvEx7 = (TextView)findViewById(R.id.tv_exemplo7);
-        this.tvEx8 = (TextView)findViewById(R.id.tv_exemplo8);
-        this.tvEx9 = (TextView)findViewById(R.id.tv_exemplo9);
-        this.ibEx1 = (ImageButton)findViewById(R.id.ib_exemplo1);
-        this.ibEx2 = (ImageButton)findViewById(R.id.ib_exemplo2);
-        this.ibEx3 = (ImageButton)findViewById(R.id.ib_exemplo3);
-        this.ibEx4 = (ImageButton)findViewById(R.id.ib_exemplo4);
-        this.ibEx5 = (ImageButton)findViewById(R.id.ib_exemplo5);
-        this.ibEx6 = (ImageButton)findViewById(R.id.ib_exemplo6);
-        this.ibEx7 = (ImageButton)findViewById(R.id.ib_exemplo7);
-        this.ibEx8 = (ImageButton)findViewById(R.id.ib_exemplo8);
-        this.ibEx9 = (ImageButton)findViewById(R.id.ib_exemplo9);
     }
 
 }

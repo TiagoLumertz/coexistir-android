@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         this.btCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent itCadastro = new Intent (MainActivity.this, CadastroActivity.class);
+                Intent itCadastro = new Intent (MainActivity.this, DadosCadastroActivity.class);
                 startActivity(itCadastro);
             }
         });
@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void iniComps() {
-        this.Coexistir = (ImageView)findViewById(R.id.iv_pergunta_estatisticas);
-        this.btLogin = (Button)findViewById(R.id.bt_fazer_login);
-        this.btCadastro = (Button)findViewById(R.id.bt_fazer_cadastro);
+        this.Coexistir = (ImageView)findViewById(R.id.iv_coexistir);
+        this.btLogin = (Button)findViewById(R.id.bt_login);
+        this.btCadastro = (Button)findViewById(R.id.bt_cadastrar);
     }
 
 }
