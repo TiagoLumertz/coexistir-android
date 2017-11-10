@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="#5CB1F3"
+    android:background="#5CB1F3"
     tools:context="com.example.usurio.myapplication.MainActivity">
 
     <Button
@@ -86,7 +86,7 @@
         android:id="@+id/iv_avaliacao"
         android:layout_width="106dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/coexistirlogo"
+        android:src="@drawable/coexistirlogo"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"

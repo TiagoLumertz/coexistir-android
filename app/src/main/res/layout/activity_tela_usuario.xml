@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="#5CB1F3"
+    android:background="#5CB1F3"
     tools:context="com.example.usurio.myapplication.MainActivity">
 
     <ImageView
         android:id="@+id/iv_nivel"
         android:layout_width="326dp"
         android:layout_height="45dp"
-        app:srcCompat="@color/colorPrimary"
+        android:src="@color/colorPrimary"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
