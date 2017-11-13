@@ -107,7 +107,7 @@
         android:id="@+id/ib_centros"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/home"
+        android:background="@drawable/calendar"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
