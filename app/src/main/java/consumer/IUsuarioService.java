@@ -1,12 +1,9 @@
 package consumer;
 
-import java.util.List;
-
 import pojo.Usuario;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
-import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
@@ -24,12 +21,10 @@ public interface IUsuarioService {
     @POST("")
     Call<Usuario> postCadastrar(@Body Usuario usuario);
 
-    @PUT("")
+    @PUT("{id}")
     Call<Usuario> putAtualizar(@Body Usuario usuario);
 
-    @GET("")
-    Call<List<Usuario>> buscarTodos();
-
+    // FALTA ESSE
     @DELETE("{id}")
     Call<Void> deletePorId(@Path("id")long id);
 

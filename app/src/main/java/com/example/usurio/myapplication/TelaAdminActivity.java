@@ -7,7 +7,10 @@ import android.widget.TextView;
 
 public class TelaAdminActivity extends Activity {
 
+    // BOTÕES
     ImageButton ibEdConteudos, ibCorpAdmin, ibAvaliacoes, ibNotificacao, ibOpcoesAdmin;
+
+    // VARIÁVEIS
     TextView tvEdConteudos, tvCorpAdmin, tvAvaliacoes, tvOla;
 
     @Override

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,9 +28,14 @@ public class LoginActivity extends Activity {
     EditText etApelido, etSenha;
     TextView tvLogin;
     Button btLogar;
+
     Usuario usuario;
-    SharedPreferences.Editor editor;
     UsuarioConsumer usuarioConsumer;
+
+    SharedPreferences.Editor editor;
+    SharedPreferences spLogin;
+
+    public static final String NOME_ARQUIVO = "arquivo_login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,98 +110,8 @@ public class LoginActivity extends Activity {
         this.btLogar = (Button)findViewById(R.id.bt_logar2);
         this.usuario = new Usuario();
         this.usuarioConsumer = new UsuarioConsumer();
+        this.spLogin = getApplicationContext().getSharedPreferences(NOME_ARQUIVO,MODE_APPEND);
+        this.editor = this.spLogin.edit();
     }
 
 }
-
-/*package com.example.remor.exemplosharedpreferences;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-
-public class TelaLogin extends Activity {
-    private TextView tvCriarConta;
-    private EditText etLogin, etSenha;
-    private ImageButton btEntrar;
-    public static final String NOME_ARQUIVO = "arquivo_login";
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_login);
-        this.inicializaComponentes();
-
-        if(this.verificaJaLogou()) {
-            chamaTelaLogado();
-        }
-
-        this.btEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        this.tvCriarConta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // CHAMAR A TELA DE CADASTRO
-                Intent itTelaCadastro = new Intent(TelaLogin.this, TelaCadastro.class);
-                startActivity(itTelaCadastro);
-                finish();
-            }
-        });
-
-
-
-
-    }
-
-    private void chamaTelaLogado() {
-        Intent itTelaLogado = new Intent(TelaLogin.this, TelaLogado.class);
-        Bundle parametros = new Bundle();
-        parametros.putSerializable("usuario", usuario);
-        itTelaLogado.putExtras(parametros);
-        startActivity(itTelaLogado);
-        finish();
-    }
-
-
-    private boolean verificaJaLogou() {
-        boolean logou = false;
-        String login = this.spLogin.getString("login", null);
-        if(login!=null) {
-            this.usuario.setLogin(login);
-            logou = true;
-        }
-        return logou;
-    }
-
-
-
-
-
-
-    private void inicializaComponentes() {
-        this.etLogin = (EditText)findViewById(R.id.et_login);
-        this.etSenha = (EditText)findViewById(R.id.et_senha);
-        this.btEntrar = (ImageButton)findViewById(R.id.bt_entrar);
-
-    }
-
-
-}
-*/

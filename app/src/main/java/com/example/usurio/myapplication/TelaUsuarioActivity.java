@@ -6,11 +6,15 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import pojo.Usuario;
+
 public class TelaUsuarioActivity extends Activity {
 
     ImageView ivNivel;
     ImageButton ibLeitura, ibAmigos, ibCentros, ibEventos, ibGuia, ibAvaliacao, ibNotificacao, ibOpcoesUsuario;
     TextView tvLeitura, tvAmigos, tvCentros, tvEventos, tvGuia, tvAvaliacao, tvOla, tvNivel, tvPontos;
+    Usuario usuario;
+    Bundle parametros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,12 @@ public class TelaUsuarioActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_usuario);
         this.iniComps();
+
+        parametros = getIntent().getExtras();
+        if (parametros != null) {
+            this.usuario = (Usuario) parametros.getSerializable("usuario");
+            tvOla.setText("Olá, " + this.usuario.getNome() + "!");
+        }
 
     }
 
@@ -40,6 +50,8 @@ public class TelaUsuarioActivity extends Activity {
         this.tvOla = (TextView)findViewById(R.id.tv_ola);
         this.tvNivel = (TextView)findViewById(R.id.tv_nivel);
         this.tvPontos = (TextView)findViewById(R.id.tv_pontos);
+        this.usuario = new Usuario();
+        this.parametros = new Bundle();
     }
 
 }

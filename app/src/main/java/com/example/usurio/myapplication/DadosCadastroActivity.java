@@ -24,93 +24,127 @@ public class DadosCadastroActivity extends Activity {
 
     TextView tvCadastro;
     Button btConfCadastro;
+
+    // VARIÁVEIS
     EditText etNome, etApelido, etDataNasc, etCidade, etRg, etEmail, etSenha;
 
+    // SPINNERS
     private String[] vetorGenero = {"Gênero","Masculino", "Feminino", "Outro"};
     private Spinner spGenero;
 	
-	private String[] vetorPosReligiosa = {	"Posição Religiosa", "Agnóstico", "Ateu", "Budista", "Católico", "Evangélico",
-											"Espírita", "Judeu", "Testemunha de Jeová", "Umbandista", "Outra"};
+	private String[] vetorPosReligiosa = {"Posição Religiosa", "Agnóstico", "Ateu", "Budista", "Católico", "Evangélico", "Espírita", "Judeu", "Testemunha de Jeová", "Umbandista", "Outra"};
     private Spinner spPosReligiosa;
 	
-	private String[] vetorUf = {"AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO",
-								"MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR",
-								"RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"};
+	private String[] vetorUf = {"AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"};
     private Spinner spUf;
 
+    // USUÁRIO E CONSUMO
     Usuario usuario;
-    UsuarioConsumer uC;
-	
+    UsuarioConsumer usuarioConsumer;
+
+    // PARÂMETROS RECEBIDOS ANTERIORMENTE
+    Bundle parametros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dados_cadastro);
-        this.iniComps();
-
-        // VALORES DOS CAMPOS ADICIONADOS AO OBJETO USUÁRIO
-        usuario.setNome(etNome.getText().toString());
-        usuario.setApelido(etApelido.getText().toString());
-        usuario.setDataNasc((Date) etDataNasc.getText());
-        usuario.setCidade(etCidade.getText().toString());
-        usuario.setRg(Long.parseLong(etRg.getText().toString()));
-        usuario.setEmail(etEmail.getText().toString());
-        usuario.setSenha(etSenha.getText().toString());
 
         // ADAPTERS DOS ARRAYS
         ArrayAdapter<String> adapterGenero = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, vetorGenero);
         this.spGenero.setAdapter(adapterGenero);
         this.spGenero.setSelection(0);
-
         this.spGenero.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {}
         });
-		
-		ArrayAdapter<String> adapterPosReligiosa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, vetorPosReligiosa);
+
+        ArrayAdapter<String> adapterPosReligiosa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, vetorPosReligiosa);
         this.spPosReligiosa.setAdapter(adapterPosReligiosa);
         this.spPosReligiosa.setSelection(0);
-
         this.spPosReligiosa.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {}
         });
-		
-		ArrayAdapter<String> adapterUf = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, vetorUf);
+
+        ArrayAdapter<String> adapterUf = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, vetorUf);
         this.spUf.setAdapter(adapterUf);
         this.spUf.setSelection(0);
-
         this.spUf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {}
         });
 
-        // CHAMANDO O CONSUMER
-        uC.postCadastrarUsuario(usuario).enqueue(new Callback<Usuario>() {
-            @Override
-            public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-                usuario = response.body();
-                Intent itTelaLogado = new Intent(DadosCadastroActivity.this, TelaUsuarioActivity.class);
-                Bundle parametro = new Bundle();
-                parametro.putSerializable("usuario", usuario);
-                itTelaLogado.putExtras(parametro);
-                startActivity(itTelaLogado);
-                finish();
-            }
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_dados_cadastro);
+        this.iniComps();
 
+        // LEITURA DAS ENTRADAS
+        this.etNome.setText(this.usuario.getNome());
+        this.etApelido.setText(this.usuario.getApelido());
+        this.etSenha.setText(this.usuario.getSenha());
+        this.etDataNasc.setText((CharSequence) this.usuario.getDataNasc());
+        this.etCidade.setText(this.usuario.getCidade());
+        this.etRg.setText((int) this.usuario.getRg());
+        this.etEmail.setText(this.usuario.getEmail());
+        this.etSenha.setText(this.usuario.getSenha());
+
+        this.btConfCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFailure(Call<Usuario> call, Throwable t) {
-                Toast.makeText(DadosCadastroActivity.this, "Não foi possível o cadastro", Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+
+                // VALORES DOS CAMPOS ADICIONADOS AO OBJETO USUÁRIO
+                usuario.setNome(etNome.getText().toString());
+                usuario.setApelido(etApelido.getText().toString());
+                usuario.setDataNasc((Date) etDataNasc.getText());
+                usuario.setCidade(etCidade.getText().toString());
+                usuario.setRg(Long.parseLong(etRg.getText().toString()));
+                usuario.setEmail(etEmail.getText().toString());
+                usuario.setSenha(etSenha.getText().toString());
+
+                parametros = new Bundle();
+
+                // CHAMANDO O CONSUMER (POST)
+                if (parametros.get("parametro").equals("cadastro")) {
+                    usuarioConsumer.postCadastrar(usuario).enqueue(new Callback<Usuario>() {
+                        @Override
+                        public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+                                usuario = response.body();
+                                Intent itTelaLogado = new Intent(DadosCadastroActivity.this, TelaUsuarioActivity.class);
+                                parametros.putSerializable("usuario", usuario);
+                                itTelaLogado.putExtras(parametros);
+                                startActivity(itTelaLogado);
+                                finish();
+                        }
+
+                        @Override
+                        public void onFailure(Call<Usuario> call, Throwable t) {
+                            Toast.makeText(DadosCadastroActivity.this, "Não foi possível o cadastro", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+
+                if (parametros.get("parametro").equals("alteracao")) {
+                    // CHAMANDO O CONSUMER (PUT)
+                    usuarioConsumer.putAtualizar(usuario).enqueue(new Callback<Usuario>() {
+                        @Override
+                        public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+                            if(response.isSuccessful()) {
+                                Intent itTelaLogado = new Intent(DadosCadastroActivity.this, TelaUsuarioActivity.class);
+                                Bundle parametros = new Bundle();
+                                parametros.putSerializable("usuario", usuario);
+                                itTelaLogado.putExtras(parametros);
+                                startActivity(itTelaLogado);
+                                finish();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<Usuario> call, Throwable t) {
+                            Toast.makeText(DadosCadastroActivity.this, "Não foi possível atualizar os dados", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
-
     }
 
     private void iniComps() {
@@ -127,7 +161,8 @@ public class DadosCadastroActivity extends Activity {
         this.spPosReligiosa = (Spinner)findViewById(R.id.sp_pos_religiosa);
         this.spUf = (Spinner)findViewById(R.id.sp_uf);
         this.usuario = new Usuario();
-        this.uC = new UsuarioConsumer();
+        this.usuarioConsumer = new UsuarioConsumer();
+        this.parametros = new Bundle();
     }
 
 }

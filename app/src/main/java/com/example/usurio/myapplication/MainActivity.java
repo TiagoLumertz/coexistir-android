@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView Coexistir;
     Button btLogin, btCadastro;
 
+    Bundle parametros;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -23,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent itCadastro = new Intent (MainActivity.this, DadosCadastroActivity.class);
+                Bundle parametros = new Bundle();
+                parametros.putString("parametro", "cadastro");
+                itCadastro.putExtras(parametros);
                 startActivity(itCadastro);
+                finish();
             }
         });
 
@@ -32,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent itLogin = new Intent (MainActivity.this, LoginActivity.class);
                 startActivity(itLogin);
+                finish();
             }
         }
 
@@ -43,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         this.Coexistir = (ImageView)findViewById(R.id.iv_coexistir);
         this.btLogin = (Button)findViewById(R.id.bt_login);
         this.btCadastro = (Button)findViewById(R.id.bt_cadastrar);
+        this.parametros = new Bundle();
     }
 
 }
