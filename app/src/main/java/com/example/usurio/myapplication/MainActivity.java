@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent itCadastro = new Intent (MainActivity.this, DadosCadastroActivity.class);
                 Bundle parametros = new Bundle();
-                parametros.putString("parametro", "cadastro");
                 itCadastro.putExtras(parametros);
                 startActivity(itCadastro);
                 finish();

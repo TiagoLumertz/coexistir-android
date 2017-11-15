@@ -29,14 +29,9 @@ public class DadosCadastroActivity extends Activity {
     EditText etNome, etApelido, etDataNasc, etCidade, etRg, etEmail, etSenha;
 
     // SPINNERS
-    private String[] vetorGenero = {"Gênero","Masculino", "Feminino", "Outro"};
-    private Spinner spGenero;
-	
-	private String[] vetorPosReligiosa = {"Posição Religiosa", "Agnóstico", "Ateu", "Budista", "Católico", "Evangélico", "Espírita", "Judeu", "Testemunha de Jeová", "Umbandista", "Outra"};
-    private Spinner spPosReligiosa;
-	
-	private String[] vetorUf = {"AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"};
-    private Spinner spUf;
+    String[] v1, v2, v3;
+
+    Spinner spGenero, spPosReligiosa, spUf;
 
     // USUÁRIO E CONSUMO
     Usuario usuario;
@@ -48,26 +43,30 @@ public class DadosCadastroActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        this.v1 = new String[] {"Gênero", "Masculino", "Feminino", "Outro"};
+        this.v2 = new String[] {"Posição Religiosa", "Agnóstico", "Ateu", "Budista", "Católico", "Evangélico", "Espírita", "Judeu", "Testemunha de Jeová", "Umbandista", "Outra"};
+        this.v3 = new String[] {"UF", "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"};
+
         // ADAPTERS DOS ARRAYS
-        ArrayAdapter<String> adapterGenero = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, vetorGenero);
-        this.spGenero.setAdapter(adapterGenero);
-        this.spGenero.setSelection(0);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, v1);
+        this.spGenero.setAdapter(adapter1);
+        this.spGenero.setSelection(1);
         this.spGenero.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {}
         });
 
-        ArrayAdapter<String> adapterPosReligiosa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, vetorPosReligiosa);
-        this.spPosReligiosa.setAdapter(adapterPosReligiosa);
-        this.spPosReligiosa.setSelection(0);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+        this.spPosReligiosa.setAdapter(adapter2);
+        this.spPosReligiosa.setSelection(1);
         this.spPosReligiosa.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {}
         });
 
-        ArrayAdapter<String> adapterUf = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, vetorUf);
-        this.spUf.setAdapter(adapterUf);
-        this.spUf.setSelection(0);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+        this.spUf.setAdapter(adapter3);
+        this.spUf.setSelection(1);
         this.spUf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {}
@@ -103,7 +102,6 @@ public class DadosCadastroActivity extends Activity {
                 parametros = new Bundle();
 
                 // CHAMANDO O CONSUMER (POST)
-                if (parametros.get("parametro").equals("cadastro")) {
                     usuarioConsumer.postCadastrar(usuario).enqueue(new Callback<Usuario>() {
                         @Override
                         public void onResponse(Call<Usuario> call, Response<Usuario> response) {
@@ -120,9 +118,7 @@ public class DadosCadastroActivity extends Activity {
                             Toast.makeText(DadosCadastroActivity.this, "Não foi possível o cadastro", Toast.LENGTH_SHORT).show();
                         }
                     });
-                }
 
-                if (parametros.get("parametro").equals("alteracao")) {
                     // CHAMANDO O CONSUMER (PUT)
                     usuarioConsumer.putAtualizar(usuario).enqueue(new Callback<Usuario>() {
                         @Override
@@ -142,7 +138,6 @@ public class DadosCadastroActivity extends Activity {
                             Toast.makeText(DadosCadastroActivity.this, "Não foi possível atualizar os dados", Toast.LENGTH_SHORT).show();
                         }
                     });
-                }
             }
         });
     }
