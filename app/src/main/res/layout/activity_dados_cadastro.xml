@@ -40,13 +40,12 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintVertical_bias="0.946"
+        app:layout_constraintVertical_bias="0.89"
         tools:ignore="HardcodedText"/>
 
     <EditText
         android:id="@+id/et_nome"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Nome"
@@ -60,13 +59,14 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintVertical_bias="0.121"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.15"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
     <EditText
         android:id="@+id/et_apelido"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Apelido"
@@ -80,13 +80,15 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintVertical_bias="0.205"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.22000003"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp"
+        app:layout_constraintHorizontal_bias="0.47" />
 
     <EditText
         android:id="@+id/et_data_nasc"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Data de Nascimento"
@@ -101,13 +103,13 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintVertical_bias="0.46"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.43"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
     <EditText
         android:id="@+id/et_cidade"
-        android:layout_width="220dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Cidade"
@@ -121,13 +123,13 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintVertical_bias="0.545"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintHorizontal_bias="0.29"
+        tools:ignore="HardcodedText"
+        android:layout_width="222dp" />
 
     <EditText
         android:id="@+id/et_rg"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="RG"
@@ -142,13 +144,14 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintVertical_bias="0.63"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.57"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="E-mail"
@@ -156,20 +159,21 @@
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715"
+        app:layout_constraintVertical_bias="0.64"
         tools:ignore="HardcodedText"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
     <EditText
         android:id="@+id/et_senha"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Senha"
@@ -183,30 +187,27 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintVertical_bias="0.806"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.71000004"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
     <Spinner
         android:id="@+id/sp_uf"
-        android:layout_width="113dp"
         android:layout_height="40dp"
         android:text="UF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545"
         tools:ignore="HardcodedText"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_width="111dp"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/et_rg"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/sp_genero"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:text="Gênero"
         tools:layout_constraintTop_creator="1"
@@ -217,13 +218,14 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintVertical_bias="0.29"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
     <Spinner
         android:id="@+id/sp_pos_religiosa"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
         android:text="Posição Religiosa"
         tools:layout_constraintTop_creator="1"
@@ -234,8 +236,9 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintVertical_bias="0.375"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintVertical_bias="0.36"
+        tools:ignore="HardcodedText"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp" />
 
 </android.support.constraint.ConstraintLayout>

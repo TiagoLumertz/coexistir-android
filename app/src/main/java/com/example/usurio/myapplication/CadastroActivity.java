@@ -11,7 +11,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -85,9 +89,9 @@ public class CadastroActivity extends Activity {
                 u.setNome(etNome.getText().toString());
                 u.setApelido(etApelido.getText().toString());
                 u.setSenha(etSenha.getText().toString());
-                u.setDataNasc((Date) etDataNasc.getText());
-                u.setCidade(etCidade.getText().toString());
+                u.setDataNasc(convDataNasc(etDataNasc.getText().toString()));
                 u.setRg(Integer.parseInt(etRg.getText().toString()));
+                u.setCidade(etCidade.getText().toString());
 
                 // MÉTODO DE CADASTRO PELO CONSUMER
                 uC.postCadastrar(u).enqueue(new Callback<Usuario>() {
@@ -131,9 +135,10 @@ public class CadastroActivity extends Activity {
 
             }
         });
-        
+
     }
 
+    // INICIALIZAÇÃO DE COMPONENTES (GERAL)
     private void iniComps() {
         this.btConfirma = (Button)findViewById(R.id.bt_conf_cad);
         this.etNome = (EditText)findViewById(R.id.et_nome);
@@ -146,6 +151,7 @@ public class CadastroActivity extends Activity {
         this.uC = new UsuarioConsumer();
     }
 
+    // INICIALIZAÇÃO DE COMPONENTES (ARRAYS E/DOS SPINNERS)
     private void iniArrays() {
         this.spGenero = (Spinner)findViewById(R.id.sp_genero);
         ArrayAdapter<String> arrayGenero = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, generos);
@@ -154,7 +160,7 @@ public class CadastroActivity extends Activity {
         spGenero.setAdapter(spinnerArrayGenero);
         generos.add("Masculino");
         generos.add("Feminino");
-        generos.add("Outros");
+        generos.add("Outro");
 
         this.spPosReligiosa = (Spinner)findViewById(R.id.sp_pos_religiosa);
         ArrayAdapter<String> arrayPosReligiosa = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, posicoes);
@@ -204,6 +210,17 @@ public class CadastroActivity extends Activity {
 		ufs.add("SE");
 		ufs.add("SP");
 		ufs.add("TO");
+    }
+
+    private Date convDataNasc(String d) {
+        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        Date data = null;
+        try {
+            data = (Date) format.parse(d);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return data;
     }
 
 }

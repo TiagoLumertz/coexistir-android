@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/iv_nivel"
-        android:layout_width="326dp"
-        android:layout_height="45dp"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
         android:src="@color/colorPrimary"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
@@ -20,9 +20,10 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.171"
-        app:layout_constraintHorizontal_bias="0.433"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintVertical_bias="0.17000002"
+        app:layout_constraintHorizontal_bias="0.43"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
 
     <ImageButton
         android:id="@+id/ib_avaliacao"
@@ -116,8 +117,8 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394"
-        app:layout_constraintHorizontal_bias="0.901"  />
+        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.9"  />
 
     <ImageButton
         android:id="@+id/ib_opcoes_usuario"
@@ -185,8 +186,8 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188"
-        app:layout_constraintHorizontal_bias="0.139"  />
+        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.15"  />
 
     <TextView
         android:id="@+id/tv_pontos"
@@ -204,8 +205,8 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188"
-        app:layout_constraintHorizontal_bias="0.865"  />
+        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.86"  />
 
     <TextView
         android:id="@+id/tv_guia"
@@ -250,14 +251,14 @@
         android:textAlignment="center"
         android:textColor="#ffffff"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="30dp"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.567"
+        android:layout_marginStart="30dp" />
 
     <TextView
         android:id="@+id/tv_amigos"

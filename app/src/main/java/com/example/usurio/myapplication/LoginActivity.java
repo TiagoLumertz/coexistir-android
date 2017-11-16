@@ -61,9 +61,9 @@ public class LoginActivity extends Activity {
                     editor.putString("login", usuario.getApelido());
                     editor.commit();
                     chamaTelaLogado();
+                    startActivity(itTelaUsuarioActivity);
                 }
 
-                startActivity(itTelaUsuarioActivity);
                 finish();
             }
         });
