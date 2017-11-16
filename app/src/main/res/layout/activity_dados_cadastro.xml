@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Faça seu cadastro"
         android:textColor="#ffffff"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="normal|bold"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"

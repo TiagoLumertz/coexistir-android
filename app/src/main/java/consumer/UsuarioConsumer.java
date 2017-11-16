@@ -1,16 +1,11 @@
 package consumer;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import pojo.Usuario;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class UsuarioConsumer {
-    // Polimorfismo
-    List<Usuario> vetor = new ArrayList<Usuario>();
 
     private IUsuarioService usuarioService;
     private Retrofit retrofit;

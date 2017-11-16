@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Coexistir</string>
+
+    <string-array name="v1">
+        <item>Genero</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+    </string-array>
+
 </resources>

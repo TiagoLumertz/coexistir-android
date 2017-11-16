@@ -13,7 +13,7 @@ public class Usuario implements Serializable {
 	private String genero;
 	private String nome;
 	private String posReligiosa;
-	private long rg;
+	private int rg;
 	private String senha;
 	private String uf;
 	
@@ -101,7 +101,7 @@ public class Usuario implements Serializable {
 		return this.rg;
 	}
 
-	public void setRg(long rg) {
+	public void setRg(int rg) {
 		this.rg = rg;
 	}
 

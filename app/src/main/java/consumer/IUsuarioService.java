@@ -13,7 +13,7 @@ import retrofit2.http.Path;
  */
 
 public interface IUsuarioService {
-    static final String URL_BASE = "http://10.0.2.2:8080/mydb/usuario/";
+    static final String URL_BASE = "http://localhost:8080/mydb/usuario/";
 
     @POST("{apelido}/{senha}")
     Call<Usuario> postAutentica(@Path("apelido") String apelido, @Path("senha") String senha);

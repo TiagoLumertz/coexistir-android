@@ -21,7 +21,7 @@
         <activity android:name=".BoxUsersActivity"></activity>
         <activity android:name=".CentrosActivity"></activity>
         <activity android:name=".CorpoAdminActivity"></activity>
-        <activity android:name=".DadosCadastroActivity"></activity>
+        <activity android:name=".CadastroActivity"></activity>
         <activity android:name=".EditarConteudoActivity"></activity>
         <activity android:name=".EscolhaLeituraActivity"></activity>
         <activity android:name=".EventosActivity"></activity>

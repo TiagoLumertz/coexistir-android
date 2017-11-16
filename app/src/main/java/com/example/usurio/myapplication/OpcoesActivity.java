@@ -38,7 +38,7 @@ public class OpcoesActivity extends Activity {
         this.btAlterarCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent itTelaAtualizar = new Intent(OpcoesActivity.this, DadosCadastroActivity.class);
+                Intent itTelaAtualizar = new Intent(OpcoesActivity.this, CadastroActivity.class);
                 Bundle parametros = new Bundle();
                 parametros.putSerializable("usuario", usuario);
                 parametros.putString("parametro", "alteracao");

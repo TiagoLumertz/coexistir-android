@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         this.btCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent itCadastro = new Intent (MainActivity.this, DadosCadastroActivity.class);
+                Intent itTelaCadastro = new Intent (MainActivity.this, CadastroActivity.class);
                 Bundle parametros = new Bundle();
-                itCadastro.putExtras(parametros);
-                startActivity(itCadastro);
+                itTelaCadastro.putExtras(parametros);
+                startActivity(itTelaCadastro);
                 finish();
             }
         });

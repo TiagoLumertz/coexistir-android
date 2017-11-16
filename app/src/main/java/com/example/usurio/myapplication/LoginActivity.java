@@ -44,6 +44,10 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         this.iniComps();
 
+        if(this.verificaJaLogou()) {
+            chamaTelaLogado();
+        }
+
         // INTENÇÃO DE LOGAR
         this.btLogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +56,13 @@ public class LoginActivity extends Activity {
                 usuario.setSenha(etSenha.getText().toString());
                 chamaAutenticaWS(usuario.getApelido(), usuario.getSenha());
                 Intent itTelaUsuarioActivity = new Intent(LoginActivity.this, TelaUsuarioActivity.class);
+
+                if(chamaAutenticaWS(etApelido.getText().toString(), etSenha.getText().toString())!=null) {
+                    editor.putString("login", usuario.getApelido());
+                    editor.commit();
+                    chamaTelaLogado();
+                }
+
                 startActivity(itTelaUsuarioActivity);
                 finish();
             }
@@ -67,6 +78,16 @@ public class LoginActivity extends Activity {
             itTelaLogado.putExtras(parametros);
             startActivity(itTelaLogado);
             finish();
+        }
+
+        private boolean verificaJaLogou() {
+            boolean logou = false;
+            String apelido = this.spLogin.getString("apelido", null);
+            if(apelido!=null) {
+                this.usuario.setApelido(apelido);
+                logou = true;
+            }
+            return logou;
         }
 
         // CONSUMO DA AUTENTICAÇÃO
@@ -115,3 +136,6 @@ public class LoginActivity extends Activity {
     }
 
 }
+
+
+
