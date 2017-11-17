@@ -15,7 +15,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -40,7 +39,6 @@ public class CadastroActivity extends Activity {
     String genero, posicao, uf;
 
     Usuario u;
-
     UsuarioConsumer uC;
 
     @Override
@@ -51,47 +49,51 @@ public class CadastroActivity extends Activity {
         this.iniComps();
         this.iniArrays();
 
-        // PEGANDO O VALOR DO SPINNER "GÊNERO"
-        spGenero.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                genero = parent.getItemAtPosition(position).toString();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {}
-        });
-
-        // PEGANDO O VALOR DO SPINNER "POSIÇÃO RELIGIOSA"
-        spPosReligiosa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                posicao = parent.getItemAtPosition(position).toString();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {}
-        });
-
-        // PEGANDO O VALOR DO SPINNER "UF"
-        spUf.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                uf = parent.getItemAtPosition(position).toString();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {}
-        });
-
         this.btConfirma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                // PEGANDO O VALOR DO SPINNER "GÊNERO"
+                spGenero.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        genero = parent.getItemAtPosition(position).toString();
+                    }
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {}
+                });
+
+                // PEGANDO O VALOR DO SPINNER "POSIÇÃO RELIGIOSA"
+                spPosReligiosa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        posicao = parent.getItemAtPosition(position).toString();
+                    }
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {}
+                });
+
+                // PEGANDO O VALOR DO SPINNER "UF"
+                spUf.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        uf = parent.getItemAtPosition(position).toString();
+                    }
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {}
+                });
+
                 // ADICIONANDO OS VALORES AO OBJETO USUÁRIO
                 u.setNome(etNome.getText().toString());
                 u.setApelido(etApelido.getText().toString());
-                u.setSenha(etSenha.getText().toString());
+                u.setGenero(genero);
+                u.setPosReligiosa(posicao);
                 u.setDataNasc(convDataNasc(etDataNasc.getText().toString()));
-                u.setRg(Integer.parseInt(etRg.getText().toString()));
+                u.setRg(Long.parseLong(etRg.getText().toString()));
                 u.setCidade(etCidade.getText().toString());
+                u.setUf(uf);
+                u.setEmail(etEmail.getText().toString());
+                u.setSenha(etSenha.getText().toString());
 
                 // MÉTODO DE CADASTRO PELO CONSUMER
                 uC.postCadastrar(u).enqueue(new Callback<Usuario>() {
@@ -113,6 +115,7 @@ public class CadastroActivity extends Activity {
                     }
                 });
 
+                /*
                 // MÉTODO DE ATUALIZAÇÃO PELO CONSUMER
                     uC.putAtualizar(u).enqueue(new Callback<Usuario>() {
                         @Override
@@ -132,6 +135,7 @@ public class CadastroActivity extends Activity {
                             Toast.makeText(CadastroActivity.this, "Não foi possível atualizar o cadastro", Toast.LENGTH_SHORT).show();
                         }
                     });
+                 */
 
             }
         });
@@ -146,6 +150,7 @@ public class CadastroActivity extends Activity {
         this.etDataNasc = (EditText)findViewById(R.id.et_data_nasc);
         this.etCidade = (EditText)findViewById(R.id.et_cidade);
         this.etRg = (EditText)findViewById(R.id.et_rg);
+        this.etEmail = (EditText)findViewById(R.id.et_email);
         this.etSenha = (EditText)findViewById(R.id.et_senha);
         this.u = new Usuario();
         this.uC = new UsuarioConsumer();

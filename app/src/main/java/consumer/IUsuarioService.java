@@ -8,24 +8,19 @@ import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
-/**
- * Created by REMOR on 31/08/2017.
- */
-
 public interface IUsuarioService {
-    static final String URL_BASE = "http://localhost:8080/mydb/usuario/";
+    static final String URL_BASE = "http://localhost:3306/mydb/";
 
-    @POST("{apelido}/{senha}")
+    @POST("usuario/{apelido}/{senha}")
     Call<Usuario> postAutentica(@Path("apelido") String apelido, @Path("senha") String senha);
 
-    @POST("")
+    @POST("usuario/")
     Call<Usuario> postCadastrar(@Body Usuario usuario);
 
-    @PUT("{id}")
+    @PUT("usuario/{id}")
     Call<Usuario> putAtualizar(@Body Usuario usuario);
 
-    // FALTA ESSE
-    @DELETE("{id}")
-    Call<Void> deletePorId(@Path("id")long id);
+    @DELETE("usuario/{id}")
+    Call<Void> deletePorId(@Path("id") long id);
 
 }

@@ -8,7 +8,7 @@
     tools:context="com.example.usurio.myapplication.MainActivity">
 
     <EditText
-        android:id="@+id/et_apelido"
+        android:id="@+id/et_apelido_l"
         android:layout_width="333dp"
         android:layout_height="40dp"
         android:ems="10"
@@ -23,27 +23,27 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintVertical_bias="0.675"
         app:layout_constraintHorizontal_bias="0.509"  />
 
     <EditText
+        android:id="@+id/et_senha_l"
         android:layout_width="333dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Senha"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.76"
-        app:layout_constraintHorizontal_bias="0.509"
-        android:id="@+id/et_senha" />
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <ImageView
         android:id="@+id/iv_login"

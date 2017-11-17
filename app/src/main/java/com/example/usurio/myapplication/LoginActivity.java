@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
     Button btLogar;
 
     Usuario usuario;
-    UsuarioConsumer usuarioConsumer;
+    UsuarioConsumer uC;
 
     SharedPreferences.Editor editor;
     SharedPreferences spLogin;
@@ -44,28 +44,30 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         this.iniComps();
 
-        if(this.verificaJaLogou()) {
+        /*if(this.verificaJaLogou()) {
             chamaTelaLogado();
-        }
+        }*/
 
         // INTENÇÃO DE LOGAR
         this.btLogar.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+
                 usuario.setApelido(etApelido.getText().toString());
                 usuario.setSenha(etSenha.getText().toString());
-                chamaAutenticaWS(usuario.getApelido(), usuario.getSenha());
-                Intent itTelaUsuarioActivity = new Intent(LoginActivity.this, TelaUsuarioActivity.class);
 
-                if(chamaAutenticaWS(etApelido.getText().toString(), etSenha.getText().toString())!=null) {
+                if(autenticacaoUsuario(etApelido.getText().toString(), etSenha.getText().toString()) != null) {
                     editor.putString("login", usuario.getApelido());
                     editor.commit();
                     chamaTelaLogado();
-                    startActivity(itTelaUsuarioActivity);
+                    Toast.makeText(LoginActivity.this, "Olá, " + usuario.getApelido() + "!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Usuário ou senha errado(s)", Toast.LENGTH_SHORT).show();
                 }
 
-                finish();
             }
+
         });
 
     }
@@ -80,6 +82,7 @@ public class LoginActivity extends Activity {
             finish();
         }
 
+        /*
         private boolean verificaJaLogou() {
             boolean logou = false;
             String apelido = this.spLogin.getString("apelido", null);
@@ -88,17 +91,17 @@ public class LoginActivity extends Activity {
                 logou = true;
             }
             return logou;
-        }
+        }*/
 
         // CONSUMO DA AUTENTICAÇÃO
-        private Usuario chamaAutenticaWS(String login, String senha) {
-            this.usuarioConsumer.postAutentica(login, senha).enqueue(new Callback<Usuario>() {
+        private Usuario autenticacaoUsuario(String apelido, String senha) {
+            this.uC.postAutentica(apelido, senha).enqueue(new Callback<Usuario>() {
                 @Override
                 public void onResponse(Call<Usuario> call, Response<Usuario> response) {
 
                     if(response.isSuccessful()) {
                         usuario = response.body();
-                        editor.putString("login", usuario.getApelido());
+                        editor.putString("apelido", usuario.getApelido());
                         editor.commit();
                         chamaTelaLogado();
                     } else {
@@ -114,10 +117,10 @@ public class LoginActivity extends Activity {
                 }
 
                 @Override
-                public void onFailure(Call<Usuario> call, Throwable t) {
+                public void onFailure(Call<Usuario> call, Throwable t) {}
 
-                }
             });
+
 
             return usuario;
         }
@@ -125,12 +128,12 @@ public class LoginActivity extends Activity {
     // INICIALIZAÇÃO DE COMPONENTES
     private void iniComps() {
         this.ivLogin = (ImageView)findViewById(R.id.iv_login);
-        this.etApelido = (EditText)findViewById(R.id.et_apelido);
-        this.etSenha = (EditText)findViewById(R.id.et_senha);
+        this.etApelido = (EditText)findViewById(R.id.et_apelido_l);
+        this.etSenha = (EditText)findViewById(R.id.et_senha_l);
         this.tvLogin = (TextView)findViewById(R.id.tv_login);
         this.btLogar = (Button)findViewById(R.id.bt_logar2);
         this.usuario = new Usuario();
-        this.usuarioConsumer = new UsuarioConsumer();
+        this.uC = new UsuarioConsumer();
         this.spLogin = getApplicationContext().getSharedPreferences(NOME_ARQUIVO,MODE_APPEND);
         this.editor = this.spLogin.edit();
     }

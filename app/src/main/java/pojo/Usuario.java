@@ -13,14 +13,14 @@ public class Usuario implements Serializable {
 	private String genero;
 	private String nome;
 	private String posReligiosa;
-	private int rg;
+	private long rg;
 	private String senha;
 	private String uf;
 	
 	public Usuario() {}
 	
 	public Usuario(String apelido, String cidade, Date dataNasc, String email, String genero, String nome,
-			String posReligiosa, int rg, String senha, String uf) {
+			String posReligiosa, long rg, String senha, String uf) {
 	this.apelido = apelido;
 	this.cidade = cidade;
 	this.dataNasc = dataNasc;
@@ -101,7 +101,7 @@ public class Usuario implements Serializable {
 		return this.rg;
 	}
 
-	public void setRg(int rg) {
+	public void setRg(long rg) {
 		this.rg = rg;
 	}
 

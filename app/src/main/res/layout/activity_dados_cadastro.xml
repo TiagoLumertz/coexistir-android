@@ -110,22 +110,23 @@
 
     <EditText
         android:id="@+id/et_cidade"
+        android:layout_width="160dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Cidade"
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintVertical_bias="0.498"
         tools:ignore="HardcodedText"
-        android:layout_width="222dp" />
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <EditText
         android:id="@+id/et_rg"
@@ -194,16 +195,16 @@
 
     <Spinner
         android:id="@+id/sp_uf"
+        android:layout_width="80dp"
         android:layout_height="40dp"
         android:text="UF"
-        tools:ignore="HardcodedText"
-        android:layout_width="111dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="@+id/et_rg"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Spinner
         android:id="@+id/sp_genero"
