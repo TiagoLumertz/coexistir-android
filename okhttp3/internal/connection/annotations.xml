@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='okhttp3.internal.connection.RealConnection boolean isEligible(okhttp3.Address, okhttp3.Route)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

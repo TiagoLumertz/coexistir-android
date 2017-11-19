@@ -121,4 +121,9 @@ public class Usuario implements Serializable {
 		this.uf = uf;
 	}
 
+	@Override
+    public String toString() {
+        return this.nome + " : " + this.apelido + " : " + this.dataNasc + " : " + this.genero + " : " + this.posReligiosa + " : " + this.cidade + " : " + this.uf + " : " + this.rg + " : " + this.email + " : " + this.senha;
+    }
+
 }

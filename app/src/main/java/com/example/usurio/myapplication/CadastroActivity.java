@@ -36,9 +36,10 @@ public class CadastroActivity extends Activity {
     List<String> posicoes = new ArrayList<String>();
     List<String> ufs = new ArrayList<String>();
 
-    String genero, posicao, uf;
+    String nome, apelido, genero, posicao, cidade, uf, email, senha;
+    Date data;
+    Long rg;
 
-    Usuario u;
     UsuarioConsumer uC;
 
     @Override
@@ -46,104 +47,102 @@ public class CadastroActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dados_cadastro);
-        this.iniComps();
-        this.iniArrays();
+        this.iniCompsCadastro();
+        this.iniArraysCadastro();
 
         this.btConfirma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                // PEGANDO O VALOR DO SPINNER "GÊNERO"
-                spGenero.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        genero = parent.getItemAtPosition(position).toString();
-                    }
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {}
-                });
+                Usuario u = new Usuario();
 
-                // PEGANDO O VALOR DO SPINNER "POSIÇÃO RELIGIOSA"
-                spPosReligiosa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        posicao = parent.getItemAtPosition(position).toString();
-                    }
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {}
-                });
+                pegaVariaveis();
 
-                // PEGANDO O VALOR DO SPINNER "UF"
-                spUf.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        uf = parent.getItemAtPosition(position).toString();
-                    }
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {}
-                });
-
-                // ADICIONANDO OS VALORES AO OBJETO USUÁRIO
-                u.setNome(etNome.getText().toString());
-                u.setApelido(etApelido.getText().toString());
+                u.setNome(nome);
+                u.setApelido(apelido);
                 u.setGenero(genero);
                 u.setPosReligiosa(posicao);
-                u.setDataNasc(convDataNasc(etDataNasc.getText().toString()));
-                u.setRg(Long.parseLong(etRg.getText().toString()));
-                u.setCidade(etCidade.getText().toString());
+                u.setDataNasc(data);
+                u.setRg(rg);
+                u.setCidade(cidade);
                 u.setUf(uf);
-                u.setEmail(etEmail.getText().toString());
-                u.setSenha(etSenha.getText().toString());
+                u.setEmail(email);
+                u.setSenha(senha);
 
-                // MÉTODO DE CADASTRO PELO CONSUMER
-                uC.postCadastrar(u).enqueue(new Callback<Usuario>() {
-                    @Override
-                    public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-                        u = response.body();
-                        Intent itLogado = new Intent(CadastroActivity.this, TelaUsuarioActivity.class);
-                        Bundle p = new Bundle();
-                        p.putSerializable("usuario", u);
-                        itLogado.putExtras(p);
-                        startActivity(itLogado);
-                        finish();
-                        Toast.makeText(CadastroActivity.this, "Cadastro efetuado com sucesso!", Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onFailure(Call<Usuario> call, Throwable t) {
-                        Toast.makeText(CadastroActivity.this, "Não foi possível o cadastro", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-                /*
-                // MÉTODO DE ATUALIZAÇÃO PELO CONSUMER
-                    uC.putAtualizar(u).enqueue(new Callback<Usuario>() {
-                        @Override
-                        public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-                            if (response.isSuccessful()) {
-                                Intent itLogado = new Intent(CadastroActivity.this, TelaUsuarioActivity.class);
-                                Bundle parametros = new Bundle();
-                                parametros.putSerializable("usuario", u);
-                                itLogado.putExtras(parametros);
-                                startActivity(itLogado);
-                                finish();
-                            }
-                        }
-
-                        @Override
-                        public void onFailure(Call<Usuario> call, Throwable t) {
-                            Toast.makeText(CadastroActivity.this, "Não foi possível atualizar o cadastro", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                 */
+                postCadastrarUsuario(u);
 
             }
         });
 
     }
 
+    private void pegaVariaveis() {
+        nome = etNome.getText().toString();
+        apelido = etApelido.getText().toString();
+        data = convDataNasc(etDataNasc.getText().toString());
+        rg = Long.parseLong(etRg.getText().toString());
+        cidade = etCidade.getText().toString();
+        email = etEmail.getText().toString();
+        senha = etSenha.getText().toString();
+        pegaSpinners();
+    }
+
+    private void pegaSpinners() {
+        // PEGANDO O VALOR DO SPINNER "GÊNERO"
+        spGenero.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                genero = parent.getItemAtPosition(position).toString();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
+
+        // PEGANDO O VALOR DO SPINNER "POSIÇÃO RELIGIOSA"
+        spPosReligiosa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                posicao = parent.getItemAtPosition(position).toString();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
+
+        // PEGANDO O VALOR DO SPINNER "UF"
+        spUf.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                uf = parent.getItemAtPosition(position).toString();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
+    }
+
+    // MÉTODO DE CADASTRO DE USUÁRIOS
+    private void postCadastrarUsuario(Usuario u) {
+        this.uC.postCadastrar(u).enqueue(new Callback<Usuario>() {
+            @Override
+            public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+                if (response.isSuccessful()) {
+                    Intent itLogado = new Intent(getApplicationContext(), TelaUsuarioActivity.class);
+                    startActivity(itLogado);
+                    finish();
+                } else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Parabéns! Você está cadastrado!", Toast.LENGTH_SHORT);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Usuario> call, Throwable t) {
+                t.printStackTrace();
+                Toast toast = Toast.makeText(getApplicationContext(), "Não foi possível cadastrar", Toast.LENGTH_SHORT);
+            }
+        });
+    }
+
     // INICIALIZAÇÃO DE COMPONENTES (GERAL)
-    private void iniComps() {
+    protected void iniCompsCadastro() {
         this.btConfirma = (Button)findViewById(R.id.bt_conf_cad);
         this.etNome = (EditText)findViewById(R.id.et_nome);
         this.etApelido = (EditText)findViewById(R.id.et_apelido);
@@ -152,15 +151,13 @@ public class CadastroActivity extends Activity {
         this.etRg = (EditText)findViewById(R.id.et_rg);
         this.etEmail = (EditText)findViewById(R.id.et_email);
         this.etSenha = (EditText)findViewById(R.id.et_senha);
-        this.u = new Usuario();
         this.uC = new UsuarioConsumer();
     }
 
     // INICIALIZAÇÃO DE COMPONENTES (ARRAYS E/DOS SPINNERS)
-    private void iniArrays() {
+    private void iniArraysCadastro() {
         this.spGenero = (Spinner)findViewById(R.id.sp_genero);
-        ArrayAdapter<String> arrayGenero = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, generos);
-        ArrayAdapter<String> spinnerArrayGenero = arrayGenero;
+        ArrayAdapter<String> spinnerArrayGenero = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, generos);
         spinnerArrayGenero.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spGenero.setAdapter(spinnerArrayGenero);
         generos.add("Masculino");
@@ -168,8 +165,7 @@ public class CadastroActivity extends Activity {
         generos.add("Outro");
 
         this.spPosReligiosa = (Spinner)findViewById(R.id.sp_pos_religiosa);
-        ArrayAdapter<String> arrayPosReligiosa = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, posicoes);
-        ArrayAdapter<String> spinnerArrayPosReligiosa = arrayPosReligiosa;
+        ArrayAdapter<String> spinnerArrayPosReligiosa = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, posicoes);
         spinnerArrayPosReligiosa.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spPosReligiosa.setAdapter(spinnerArrayPosReligiosa);
         posicoes.add("Agnóstico");
@@ -184,37 +180,36 @@ public class CadastroActivity extends Activity {
         posicoes.add("Outra");
 
         this.spUf = (Spinner)findViewById(R.id.sp_uf);
-        ArrayAdapter<String> arrayUf = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, ufs);
-        ArrayAdapter<String> spinnerArrayUf = arrayUf;
+        ArrayAdapter<String> spinnerArrayUf = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, ufs);
         spinnerArrayUf.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spUf.setAdapter(spinnerArrayUf);
         ufs.add("AC");
         ufs.add("AL");
         ufs.add("AM");
-		ufs.add("AP");
-		ufs.add("BA");
-		ufs.add("CE");
-		ufs.add("DF");
-		ufs.add("ES");
-		ufs.add("GO");
-		ufs.add("MA");
-		ufs.add("MG");
-		ufs.add("MS");
-		ufs.add("MT");
-		ufs.add("PA");
-		ufs.add("PB");
-		ufs.add("PE");
-		ufs.add("PI");
-		ufs.add("PR");
-		ufs.add("RJ");
-		ufs.add("RN");
-		ufs.add("RO");
-		ufs.add("RR");
-		ufs.add("RS");
-		ufs.add("SC");
-		ufs.add("SE");
-		ufs.add("SP");
-		ufs.add("TO");
+        ufs.add("AP");
+        ufs.add("BA");
+        ufs.add("CE");
+        ufs.add("DF");
+        ufs.add("ES");
+        ufs.add("GO");
+        ufs.add("MA");
+        ufs.add("MG");
+        ufs.add("MS");
+        ufs.add("MT");
+        ufs.add("PA");
+        ufs.add("PB");
+        ufs.add("PE");
+        ufs.add("PI");
+        ufs.add("PR");
+        ufs.add("RJ");
+        ufs.add("RN");
+        ufs.add("RO");
+        ufs.add("RR");
+        ufs.add("RS");
+        ufs.add("SC");
+        ufs.add("SE");
+        ufs.add("SP");
+        ufs.add("TO");
     }
 
     private Date convDataNasc(String d) {

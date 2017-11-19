@@ -44,10 +44,6 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         this.iniComps();
 
-        /*if(this.verificaJaLogou()) {
-            chamaTelaLogado();
-        }*/
-
         // INTENÇÃO DE LOGAR
         this.btLogar.setOnClickListener(new View.OnClickListener() {
 

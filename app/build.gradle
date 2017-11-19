@@ -29,4 +29,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+
+    androidTestCompile 'org.testng:testng:6.9.6'
 }
