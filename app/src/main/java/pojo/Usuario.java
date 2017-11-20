@@ -8,19 +8,20 @@ public class Usuario implements Serializable {
 	private long idUsuario;
 	private String apelido;
 	private String cidade;
+
 	private Date dataNasc;
 	private String email;
 	private String genero;
 	private String nome;
 	private String posReligiosa;
-	private long rg;
+	private String rg;
 	private String senha;
 	private String uf;
 	
 	public Usuario() {}
 	
 	public Usuario(String apelido, String cidade, Date dataNasc, String email, String genero, String nome,
-			String posReligiosa, long rg, String senha, String uf) {
+			String posReligiosa, String rg, String senha, String uf) {
 	this.apelido = apelido;
 	this.cidade = cidade;
 	this.dataNasc = dataNasc;
@@ -97,11 +98,11 @@ public class Usuario implements Serializable {
 		this.posReligiosa = posReligiosa;
 	}
 
-	public long getRg() {
+	public String getRg() {
 		return this.rg;
 	}
 
-	public void setRg(long rg) {
+	public void setRg(String rg) {
 		this.rg = rg;
 	}
 

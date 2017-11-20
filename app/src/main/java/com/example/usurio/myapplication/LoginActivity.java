@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -26,7 +25,6 @@ public class LoginActivity extends Activity {
 
     ImageView ivLogin;
     EditText etApelido, etSenha;
-    TextView tvLogin;
     Button btLogar;
 
     Usuario usuario;
@@ -54,10 +52,10 @@ public class LoginActivity extends Activity {
                 usuario.setSenha(etSenha.getText().toString());
 
                 if(autenticacaoUsuario(etApelido.getText().toString(), etSenha.getText().toString()) != null) {
-                    editor.putString("login", usuario.getApelido());
+                    editor.putString("apelido", usuario.getApelido());
                     editor.commit();
                     chamaTelaLogado();
-                    Toast.makeText(LoginActivity.this, "Olá, " + usuario.getApelido() + "!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Login feito com sucesso!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(LoginActivity.this, "Usuário ou senha errado(s)", Toast.LENGTH_SHORT).show();
                 }
@@ -71,11 +69,13 @@ public class LoginActivity extends Activity {
         // CHAMA A TELA APÓS LOGAR
         private void chamaTelaLogado() {
             Intent itTelaLogado = new Intent(LoginActivity.this, TelaUsuarioActivity.class);
+
             Bundle parametros = new Bundle();
-            parametros.putSerializable("usuario", usuario);
+            parametros.putString("apelido", etApelido.getText().toString());
             itTelaLogado.putExtras(parametros);
             startActivity(itTelaLogado);
             finish();
+
         }
 
         /*
@@ -114,10 +114,7 @@ public class LoginActivity extends Activity {
 
                 @Override
                 public void onFailure(Call<Usuario> call, Throwable t) {}
-
             });
-
-
             return usuario;
         }
 
@@ -126,7 +123,6 @@ public class LoginActivity extends Activity {
         this.ivLogin = (ImageView)findViewById(R.id.iv_login);
         this.etApelido = (EditText)findViewById(R.id.et_apelido_l);
         this.etSenha = (EditText)findViewById(R.id.et_senha_l);
-        this.tvLogin = (TextView)findViewById(R.id.tv_login);
         this.btLogar = (Button)findViewById(R.id.bt_logar2);
         this.usuario = new Usuario();
         this.uC = new UsuarioConsumer();

@@ -25,8 +25,7 @@ public class TelaUsuarioActivity extends Activity {
 
         parametros = getIntent().getExtras();
         if (parametros != null) {
-            this.usuario = (Usuario) parametros.getSerializable("usuario");
-            tvOla.setText("Olá, " + this.usuario.getNome() + "!");
+            tvOla.setText("Olá, " + parametros.getString("apelido") + "!");
         }
 
     }

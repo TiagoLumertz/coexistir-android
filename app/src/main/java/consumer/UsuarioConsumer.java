@@ -20,7 +20,7 @@ public class UsuarioConsumer {
 
     public Call<Usuario> postAutentica(String apelido, String senha) { return this.uS.postAutentica(apelido, senha); }
 
-    public Call<Usuario> postCadastrar(Usuario u) { return this.uS.postCadastrar(u); }
+    public Call<Usuario> postCadastrar(Usuario u) { System.out.println(u.getDataNasc()); return this.uS.postCadastrar(u); }
 
     public Call<Usuario> putAtualizar(Usuario u) { return this.uS.putAtualizar(u); }
 

@@ -19,20 +19,20 @@
                 </intent-filter>
         </activity>
 
-        <activity android:name=".AmigosActivity"></activity>
-        <activity android:name=".AvaliacaoActivity"></activity>
-        <activity android:name=".BoxUsersActivity"></activity>
-        <activity android:name=".CentrosActivity"></activity>
-        <activity android:name=".CorpoAdminActivity"></activity>
-        <activity android:name=".CadastroActivity"></activity>
-        <activity android:name=".EditarConteudoActivity"></activity>
-        <activity android:name=".EscolhaLeituraActivity"></activity>
-        <activity android:name=".EventosActivity"></activity>
-        <activity android:name=".GuiaActivity"></activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".OpcoesActivity"></activity>
-        <activity android:name=".TelaAdminActivity"></activity>
-        <activity android:name=".TelaUsuarioActivity"></activity>
+        <activity android:name=".AmigosActivity" />
+        <activity android:name=".AvaliacaoActivity" />
+        <activity android:name=".BoxUsersActivity" />
+        <activity android:name=".CentrosActivity" />
+        <activity android:name=".CorpoAdminActivity" />
+        <activity android:name=".CadastroActivity" />
+        <activity android:name=".EditarConteudoActivity" />
+        <activity android:name=".EscolhaLeituraActivity" />
+        <activity android:name=".EventosActivity" />
+        <activity android:name=".GuiaActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OpcoesActivity" />
+        <activity android:name=".TelaAdminActivity" />
+        <activity android:name=".TelaUsuarioActivity" />
 
     </application>
 

@@ -9,10 +9,10 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface IUsuarioService {
-    static final String URL_BASE = "http://192.168.1.106:8080/";
+    static final String URL_BASE = "http://192.168.1.100:8080/";
 
     @POST("usuario/{apelido}/{senha}")
-    Call<Usuario> postAutentica(@Path("login") String apelido, @Path("senha") String senha);
+    Call<Usuario> postAutentica(@Path("apelido") String apelido, @Path("senha") String senha);
 
     @POST("usuario/")
     Call<Usuario> postCadastrar(@Body Usuario usuario);

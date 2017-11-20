@@ -36,9 +36,8 @@ public class CadastroActivity extends Activity {
     List<String> posicoes = new ArrayList<String>();
     List<String> ufs = new ArrayList<String>();
 
-    String nome, apelido, genero, posicao, cidade, uf, email, senha;
+    String nome, apelido, genero, posicao, cidade, uf, rg, email, senha;
     Date data;
-    Long rg;
 
     UsuarioConsumer uC;
 
@@ -80,7 +79,7 @@ public class CadastroActivity extends Activity {
         nome = etNome.getText().toString();
         apelido = etApelido.getText().toString();
         data = convDataNasc(etDataNasc.getText().toString());
-        rg = Long.parseLong(etRg.getText().toString());
+        rg = etRg.getText().toString();
         cidade = etCidade.getText().toString();
         email = etEmail.getText().toString();
         senha = etSenha.getText().toString();
@@ -213,7 +212,7 @@ public class CadastroActivity extends Activity {
     }
 
     private Date convDataNasc(String d) {
-        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date data = null;
         try {
             data = (Date) format.parse(d);
