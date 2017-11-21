@@ -41,7 +41,6 @@ public class OpcoesActivity extends Activity {
                 Intent itTelaAtualizar = new Intent(OpcoesActivity.this, CadastroActivity.class);
                 Bundle parametros = new Bundle();
                 parametros.putSerializable("usuario", usuario);
-                parametros.putString("parametro", "alteracao");
                 itTelaAtualizar.putExtras(parametros);
                 startActivity(itTelaAtualizar);
                 finish();
@@ -53,18 +52,23 @@ public class OpcoesActivity extends Activity {
             public void onClick(View v) {
                 editor.clear();
                 editor.commit();
-                Intent itTelaLogin = new Intent(OpcoesActivity.this, MainActivity.class);
-                startActivity(itTelaLogin);
-                finish();
+                chamaLogoff();
             }
         });
 
     }
 
+    private void chamaLogoff() {
+        Intent itLogoff = new Intent(OpcoesActivity.this, MainActivity.class);
+        startActivity(itLogoff);
+        finish();
+    }
+
+
     private void iniComps(){
         this.btAlterarCad = (Button)findViewById(R.id.bt_alterar_cad);
-        this.btDesativarCad = (Button)findViewById(R.id.bt_logoff);
-        this.btLogoff = (Button)findViewById(R.id.bt_desativar_cad);
+        this.btDesativarCad = (Button)findViewById(R.id.bt_desativar_cad);
+        this.btLogoff = (Button)findViewById(R.id.bt_logoff);
         this.tvOpcoes = (TextView)findViewById(R.id.tv_opcoes);
         this.ivOpcoes = (ImageView)findViewById(R.id.iv_opcoes);
         this.parametros = new Bundle();

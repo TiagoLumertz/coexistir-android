@@ -1,7 +1,9 @@
 package com.example.usurio.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,6 +30,105 @@ public class TelaUsuarioActivity extends Activity {
             tvOla.setText("Olá, " + parametros.getString("apelido") + "!");
         }
 
+        this.ibLeitura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaLerConteudo();
+            }
+        });
+
+        this.ibAmigos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaListaAmigos();
+            }
+        });
+
+        this.ibCentros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaCentros();
+            }
+        });
+
+        this.ibEventos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaEventos();
+            }
+        });
+
+        this.ibGuia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaGuia();
+            }
+        });
+
+        this.ibAvaliacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaAvaliacao();
+            }
+        });
+
+        this.ibOpcoesUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaOpcoes();
+            }
+        });
+
+    }
+
+    private void chamaOpcoes() {
+        Intent itOpcoes = new Intent(TelaUsuarioActivity.this, OpcoesActivity.class);
+        startActivity(itOpcoes);
+        itOpcoes.putExtras(parametros);
+        finish();
+    }
+
+    private void chamaAvaliacao() {
+        Intent itAvaliacao = new Intent(TelaUsuarioActivity.this, AvaliacaoActivity.class);
+        startActivity(itAvaliacao);
+        itAvaliacao.putExtras(parametros);
+        finish();
+    }
+
+    private void chamaGuia() {
+        Intent itGuia = new Intent(TelaUsuarioActivity.this, GuiaActivity.class);
+        startActivity(itGuia);
+        finish();
+    }
+
+    private void chamaEventos() {
+        Intent itEventos = new Intent(TelaUsuarioActivity.this, EventosActivity.class);
+        startActivity(itEventos);
+        itEventos.putExtras(parametros);
+        finish();
+    }
+
+    private void chamaCentros() {
+        Intent itCentros = new Intent(TelaUsuarioActivity.this, CentrosActivity.class);
+        startActivity(itCentros);
+        itCentros.putExtras(parametros);
+        finish();
+    }
+
+    // CHAMA A TELA "LISTA DE AMIGOS"
+    private void chamaListaAmigos() {
+        Intent itListaAmigos = new Intent(TelaUsuarioActivity.this, AmigosActivity.class);
+        startActivity(itListaAmigos);
+        itListaAmigos.putExtras(parametros);
+        finish();
+    }
+
+    // CHAMA A TELA "LER CONTEÚDOS"
+    private void chamaLerConteudo() {
+        Intent itLerConteudo = new Intent(TelaUsuarioActivity.this, EscolhaLeituraActivity.class);
+        startActivity(itLerConteudo);
+        itLerConteudo.putExtras(parametros);
+        finish();
     }
 
     private void iniComps(){
@@ -52,5 +153,4 @@ public class TelaUsuarioActivity extends Activity {
         this.usuario = new Usuario();
         this.parametros = new Bundle();
     }
-
 }

@@ -42,6 +42,10 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         this.iniComps();
 
+        if(this.verifLogin()) {
+            chamaTelaLogado();
+        }
+
         // INTENÇÃO DE LOGAR
         this.btLogar.setOnClickListener(new View.OnClickListener() {
 
@@ -50,15 +54,7 @@ public class LoginActivity extends Activity {
 
                 usuario.setApelido(etApelido.getText().toString());
                 usuario.setSenha(etSenha.getText().toString());
-
-                if(autenticacaoUsuario(etApelido.getText().toString(), etSenha.getText().toString()) != null) {
-                    editor.putString("apelido", usuario.getApelido());
-                    editor.commit();
-                    chamaTelaLogado();
-                    Toast.makeText(LoginActivity.this, "Login feito com sucesso!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(LoginActivity.this, "Usuário ou senha errado(s)", Toast.LENGTH_SHORT).show();
-                }
+                autenticacaoUsuario(usuario.getApelido(),usuario.getSenha());
 
             }
 
@@ -69,17 +65,16 @@ public class LoginActivity extends Activity {
         // CHAMA A TELA APÓS LOGAR
         private void chamaTelaLogado() {
             Intent itTelaLogado = new Intent(LoginActivity.this, TelaUsuarioActivity.class);
-
             Bundle parametros = new Bundle();
             parametros.putString("apelido", etApelido.getText().toString());
+            parametros.putString("senha", etSenha.getText().toString());
             itTelaLogado.putExtras(parametros);
             startActivity(itTelaLogado);
             finish();
 
         }
 
-        /*
-        private boolean verificaJaLogou() {
+        private boolean verifLogin() {
             boolean logou = false;
             String apelido = this.spLogin.getString("apelido", null);
             if(apelido!=null) {
@@ -87,7 +82,7 @@ public class LoginActivity extends Activity {
                 logou = true;
             }
             return logou;
-        }*/
+        }
 
         // CONSUMO DA AUTENTICAÇÃO
         private Usuario autenticacaoUsuario(String apelido, String senha) {
@@ -97,10 +92,12 @@ public class LoginActivity extends Activity {
 
                     if(response.isSuccessful()) {
                         usuario = response.body();
-                        editor.putString("apelido", usuario.getApelido());
-                        editor.commit();
-                        chamaTelaLogado();
+						Toast.makeText(LoginActivity.this, "Login feito com sucesso!", Toast.LENGTH_SHORT).show();
+						editor.putString("apelido", usuario.getApelido());
+						editor.commit();
+						chamaTelaLogado();
                     } else {
+
                         try {
                             JSONObject jObjError = new JSONObject(response.errorBody().string());
                             Toast.makeText(LoginActivity.this, jObjError.getString("errorMessage"), Toast.LENGTH_LONG).show();
@@ -109,6 +106,7 @@ public class LoginActivity extends Activity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+
                     }
                 }
 
